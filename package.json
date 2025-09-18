@@ -1,0 +1,12 @@
+{
+  "name": "projeto-webii",
+  "version": "1.0.0",
+  "description": "Projeto de Programação Web II",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
