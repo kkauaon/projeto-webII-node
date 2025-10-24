@@ -10,8 +10,10 @@ router.get('/:postId', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const comment = req.body;
-    await Comments.create(comment);
-    res.json(comment);
+    console.log(JSON.stringify(comment.commentBody));
+    console.log(comment);
+    const saved = await Comments.create(comment);
+    res.json(saved);
 });
 
 module.exports = router;
