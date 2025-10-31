@@ -8,14 +8,17 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.TEXT,
             allowNull: false,
         },
-        username: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
     });
+
     Posts.associate = models => {
+        Posts.belongsTo(models.Users, {
+            foreignKey: {
+                allowNull: false,
+            },
+        });
+
         Posts.hasMany(models.Comments, {
-            onDelete: 'cascade',
+            onDelete: 'CASCADE',
         });
     };
 
