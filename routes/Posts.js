@@ -8,7 +8,8 @@ router.get('/', async (req, res) => {
         include: [{
             model: Users,
             attributes: ['username']
-        }]
+        }],
+        order: [['createdAt', 'DESC']]
     });
     res.json(listOfPosts);
 });

@@ -1,23 +1,23 @@
 module.exports = {
     development: {
-        username: 'administrador',
+        username: process.env.DB_USER,
         password: process.env.DB_PASS,
         database: process.env.DB_NAME,
-        host: 'projetoweb2.database.windows.net',
-        dialect: 'mssql',
+        host: process.env.DB_HOST,
+        dialect: process.env.DB_DIALECT,
     },
     test: {
-        username: 'administrador',
+        username: process.env.DB_USER,
         password: process.env.DB_PASS,
         database: process.env.DB_NAME,
-        host: 'projetoweb2.database.windows.net',
-        dialect: 'mssql',
+        host: process.env.DB_HOST,
+        dialect: process.env.DB_DIALECT,
     },
     production: {
-        username: 'administrador',
+        username: process.env.DB_USER,
         password: process.env.DB_PASS,
         database: process.env.DB_NAME,
-        host: 'projetoweb2.database.windows.net',
-        dialect: 'mssql',
+        host: process.env.DB_HOST,
+        dialect: process.env.DB_DIALECT,
     },
 };
