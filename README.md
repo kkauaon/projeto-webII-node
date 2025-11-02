@@ -38,7 +38,7 @@ npm install
 
 **3. Configure as Variáveis de Ambiente:**
 
-Crie um arquivo `.env` na raiz do projeto. Você precisará preencher com as credenciais do seu banco de dados Azure SQL e um segredo para autenticação.
+Crie um arquivo `.env` na raiz do projeto. Você precisará preencher com as credenciais do seu banco de dados SQL e um segredo para autenticação.
 
 ```env
 # Configuração do Banco de Dados para o Sequelize
